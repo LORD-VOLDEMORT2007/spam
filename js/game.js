@@ -316,11 +316,13 @@ resetVelocity(){
 }
 
 gameEnd1(){
+  camera.off();
   textSize(100)
   fill("yellow")
   text(allPlayers.player2.name + ", WINS !!!!" , 0 , height/2)
 }
 gameEnd2(){
+  camera.off();
   textSize(100)
   fill("yellow")
   text(allPlayers.player1.name + ", WINS !!!!" , 0 , height/2)
