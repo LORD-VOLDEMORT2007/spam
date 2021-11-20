@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.tex{
+  color: white;
+  font-size: 60px;
+}
+.text{
+  color: white;
+  font-size: 30px;
+}
+
+.bg{
+  padding: 20px;
+}
+.inp{
+  width: 350px;
+  height: 50px;
+}

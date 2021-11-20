@@ -1,0 +1,118 @@
+
+var spi = []
+var num = 0
+
+function preload() {
+//preload the images here
+img = loadImage("bg workout.jpeg")
+
+}
+
+function setup() {
+  createCanvas(1355, 670);
+  // create sprites here
+   sprite1 = createSprite(500 , 486 , 130 , 130 );
+   sprite1.shapeColor = "red"
+
+   sprite2 = createSprite(710 , 178 , 280 , 280);
+   sprite2.shapeColor = "red"
+
+   sprite3 = createSprite(1235 , 328  , 130 , 130);
+   sprite3.shapeColor = "red"
+
+   sprite4 = createSprite(863 , 428 , 130 , 130);
+   sprite4.shapeColor = "red"
+
+   sprite5 = createSprite(240 , 517 , 130 , 130 );
+   sprite5.shapeColor = "red"
+
+   sprite6 = createSprite(1007 , 544 , 130 , 130 );
+   sprite6.shapeColor = "red"
+
+   sprite7 = createSprite(1006 , 161 , 130 , 130 );
+   sprite7.shapeColor = "red"
+
+   sprite8 = createSprite(354 , 338  , 80 , 150 );
+   sprite8.shapeColor = "red"
+
+   sprite9 = createSprite(852 , 630  , 150 , 100);
+   sprite9.shapeColor = "red"
+
+   sprite10 = createSprite(911 , 301);
+   sprite10.shapeColor = "red"
+
+   sprite11 = createSprite(108 , 346 , 120 , 200);
+   sprite11.shapeColor = "red"
+
+   sprite12 = createSprite( 679 , 552 , 180 , 230);
+   sprite12.shapeColor = "red"
+
+   sprite13 = createSprite(475 , 293 , 130 , 130 );
+   sprite13.shapeColor = "red"
+
+   sprite14 = createSprite(242 , 184 , 130 , 130);
+   sprite14.shapeColor = "red"
+
+   sp1 = createSprite(432 , 172 , 300 , 50)
+
+   sp2 = createSprite(480 , 595 , 240 , 50)
+
+   sp3 = createSprite(352 , 517, 120 , 50)
+
+   sp4 = createSprite(246 , 349 , 180 , 50)
+
+   sp5 = createSprite(860 , 534 , 200 , 50)
+
+   sp6 = createSprite(900 , 169 , 100 , 50)
+
+   sp7 = createSprite(750 , 394 , 120 , 50)
+
+   sp8 = createSprite(1115 , 327 , 120 , 50)
+
+   sp9 = createSprite(432 , 172 , 300 , 50)
+
+   sp10 = createSprite(432 , 172 , 300 , 50)
+
+   sp11 = createSprite(432 , 172 , 300 , 50)
+
+   sp12 = createSprite(432 , 172 , 300 , 50)
+
+   sp13 = createSprite(432 , 172 , 300 , 50)
+
+   sp14 = createSprite(432 , 172 , 300 , 50)
+
+   sp15 = createSprite(432 , 172 , 300 , 50)
+  
+   spi = [sp1 , sp2 , sp3 , sp4 , sp5 , sp6 , sp7 , sp8 , sp9 , sp10 , sp11 , sp12 , sp13 , sp14 , sp15]
+}
+
+function draw() {
+  background(img);
+
+  text(mouseX + " , " + mouseY , 100 , 20)
+
+
+//console.log(mouseX)
+//console.log(mouseY)
+
+drawSprites();
+}
+
+function mouseDragged(){
+  spi[num].x = mouseX
+  spi[num].y = mouseY
+  
+}
+
+
+function mouseReleased(){
+
+  
+  //spi[num].x = sp1.x
+  //spi[num].y = sp1.y
+  num += 1
+  
+  console.log(spi[num].x)
+  console.log(spi[num].y)
+}
+

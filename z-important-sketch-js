@@ -1,0 +1,99 @@
+
+var spi = []
+var num = 0
+
+function preload() {
+//preload the images here
+img = loadImage("bg workout.jpeg")
+
+}
+
+function setup() {
+  createCanvas(1355, 670);
+  // create sprites here
+  spriteMode = CENTER
+  
+  base = createSprite(238 , 107 , 150 , 5)
+  base = createSprite(170 , 180 , 5 , 150)
+  base = createSprite(196 , 254 , 50 , 5)
+  base = createSprite(221 , 285 , 5 , 70)
+  base = createSprite(204 , 321 , 40 , 5)
+  base = createSprite(185 , 300 , 5 , 45)
+  base = createSprite(161 , 279 , 50 , 5)
+  base = createSprite(139 , 257 , 5 , 50)
+  base = createSprite(95 , 233 , 90 , 5)
+  base = createSprite(55 , 348 , 5 , 230)
+  base = createSprite(95 , 457 , 90 , 5)
+  base = createSprite(139 , 435 , 5 , 50)
+  base = createSprite(161 , 410 , 50 , 5)
+  base = createSprite(185 , 393 , 5 , 40)
+  base = createSprite(204 , 375 , 40 , 5)
+  base = createSprite(223 , 412 , 5 , 70)
+  base = createSprite(196 , 447 , 55 , 5)
+  base = createSprite(170 , 522 , 5 , 150)
+  base = createSprite(238 , 592 , 150 , 5)
+  base = createSprite(309 , 569 , 5 , 50)
+  base = createSprite(335 , 545 , 55 , 5)
+  base = createSprite(363 , 585 , 5 , 83)
+  base = createSprite(473 , 623 , 230 , 5)
+  base = createSprite(584 , 655 , 5 , 70)
+  base = createSprite(675 , 668 , 190 , 5)
+  base = createSprite(767 , 615 , 5 , 110)
+  base = createSprite(812 , 560 , 95 , 5)
+  base = createSprite(859 , 570 , 5 , 25)
+  base = createSprite(818 , 579 , 85 , 5)
+  base = createSprite(777 , 625 , 5 , 90)
+  base = createSprite(852 , 668 , 155 , 5)
+  base = createSprite(927 , 623 , 5 , 90)
+  base = createSprite(920 , 579 , 20 , 5)
+  base = createSprite(909 , 570 , 5 , 25)
+  base = createSprite(924 , 560 , 30 , 5)
+  base = createSprite(939 , 590 , 5 , 60)
+  base = createSprite(1010 , 618 , 140, 5)
+  base = createSprite(1075 , 545 , 5 , 150)
+  base = createSprite(1056 , 471 , 40 , 5)
+  base = createSprite(1036 , 437 , 5 , 75)
+  base = createSprite(1070 , 401 , 67 , 5)
+  base = createSprite(1103 , 378 , 5 , 50)
+  base = createSprite(1144 , 354 , 85 , 5)
+  base = createSprite(1185 , 374 , 5 , 40)
+  base = createSprite(1237 , 392 , 105 , 5)
+  base = createSprite(1237 , 263 , 105 , 5)
+  base = createSprite(1144 , 300 , 85 , 5)
+  base = createSprite(1185 , 281 , 5 , 40)
+  base = createSprite(1103 , 281 , 5 , 40)
+  base = createSprite(1070 , 263 , 67 , 5)
+  base = createSprite(1289 , 327 , 5 , 135)
+  base = createSprite(1035 , 249 , 5 , 33)
+  base = createSprite(1054 , 234 , 40 , 5)
+  base = createSprite(1074 , 162 , 5 , 150)
+  base = createSprite(1007 , 89 , 140 , 5)
+  base = createSprite(938 , 116 , 5 , 55)
+  base = createSprite(909 , 143 , 60 , 5)
+  base = createSprite(880 , 84 , 5 , 120)
+  base = createSprite(717 , 24 , 330 ,5)
+  base = createSprite(554 , 84 , 5 , 120)
+  base = createSprite(433, 142 , 247 , 5)
+  base = createSprite(310 , 125 , 5 , 40)
+  base = createSprite(271 , 285 , 5 , 70)
+  base = createSprite(291 , 253 , 45 , 5)
+  base = createSprite(310 , 228 , 5 , 57)
+  base = createSprite(378 , 201 , 140 , 5)
+  base = createSprite(446 , 208 , 5 , 20)
+  base = createSprite(221 , 285 , 5 , 70)
+
+  base.shapeColor = "red"
+
+}
+
+function draw() {
+  background(img);
+
+  console.log(mouseX + " , " + mouseY)
+
+
+//console.log(mouseX)
+//console.log(mouseY)
+
+drawSprites();
+}

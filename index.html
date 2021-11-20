@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="p5.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/collisionDetection.js"></script>
+    <script src="js/player.js"></script>
+    <script src="matter.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"> 
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js">
+    </script>
+    <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBSQ2E8szCG_Cebuob5-NcyjrKcFgH2F0Q",
+      authDomain: "wizarding-bf56b.firebaseapp.com",
+      databaseURL: "https://wizarding-bf56b-default-rtdb.firebaseio.com",
+      projectId: "wizarding-bf56b",
+      storageBucket: "wizarding-bf56b.appspot.com",
+      messagingSenderId: "362513877266",
+      appId: "1:362513877266:web:5586ccd9b6541bb2914bcb"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script> 
+
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
